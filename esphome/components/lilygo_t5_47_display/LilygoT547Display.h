@@ -10,7 +10,7 @@
 #define EPD_DRIVER
 #include "epd_internals.h"
 #include "epd_highlevel.h"
-#include "board/epd_board_lilygo_t5_47.h"
+#include "epd_board_lilygo_t5_47.h"
 #endif
 
 namespace esphome {
