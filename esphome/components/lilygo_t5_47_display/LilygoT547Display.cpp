@@ -23,7 +23,8 @@ int LilygoT547Display::get_width_internal() { return 960; }
 int LilygoT547Display::get_height_internal() { return 540; }
 
 void LilygoT547Display::setup() {
-  epd_init(epd_board_lilygo_t5_47_touch, epd_get_display(), EPD_OPTIONS_DEFAULT);
+  epd_init(epd_board_lilygo_t5_47_touch);
+  // epd_init(epd_board_lilygo_t5_47_touch, epd_get_display(), EPD_OPTIONS_DEFAULT);
   hl = epd_hl_init(WAVEFORM);
   if (landscape_) {
     EpdRotation orientation = EPD_ROT_LANDSCAPE;
